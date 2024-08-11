@@ -16,6 +16,8 @@ service="$1"
 operation="$2"
 input="$3" # Variable:Value, mehrere mit leerzeichen getrennt
 url="https://myspoho-test5.dshs-koeln.de/qisserver/services2/" # <- eventuell später noch ändern
+# Hier ist auch die Beschreibung der API's zu finden
+
 parameter=""
 for in in $input
 do
