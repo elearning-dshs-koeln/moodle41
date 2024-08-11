@@ -6,7 +6,7 @@
 # in Notes->HISinOne | hiszugang.txt
 # Nach der Anfrage bei einem Webservice befindet sich dann das Ergebnis
 # zur weiteren Verarbeitung in /dev/shm/response.xml
-# Die Benutzung ist dann wie folgt 
+# Die Benutzung ist wie folgt:
 # his Service Operation "variable1:value variable2:value"
 # z.B. für ID's aller Kurse des Sommersemester 2022:
 # his PlanelementService findPlanelementOfEvent "termYear:2022 termTypeValueId:30"
