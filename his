@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Abfrage der Webservices von myspoho (HISinOne) unter Linux
-# Die nächsten 2 Zeilen müssen noch geändert werden.
+# Die Zeilen 13-15 müssen noch geändert werden.
 # Die Infos befinden sich bei https://elearning.dshs-koeln.de/nc
 # in Notes->HISinOne | hiszugang.txt
 # Nach der Anfrage bei einem Webservice befindet sich dann das Ergebnis
@@ -12,11 +12,10 @@
 # his PlanelementService findPlanelementOfEvent "termYear:2022 termTypeValueId:30"
 username="username" # <- noch ändern
 password="password" # <- noch ändern
+url="url" # <- noch ändern , Hier ist auch die Beschreibung der API's zu finden
 service="$1"
 operation="$2"
 input="$3" # Variable:Value, mehrere mit leerzeichen getrennt
-url="https://myspoho-test5.dshs-koeln.de/qisserver/services2/" # <- eventuell später noch ändern
-# Hier ist auch die Beschreibung der API's zu finden
 
 parameter=""
 for in in $input
@@ -34,7 +33,7 @@ servicerequestb="</"$service":"$operation">"
 soapaction="SOAPAction: \""$service":"$operation"\""
 request="  <soapenv:Envelope 
     xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" 
-    xmlns:"$service"=\"https://myspoho-test5.dshs-koeln.de/webservice/qisserver/services2/"
+    xmlns:"$service"=\""$url"\"
 request+=$service
 request+="\">
     <soapenv:Header>
