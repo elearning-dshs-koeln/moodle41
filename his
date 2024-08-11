@@ -33,7 +33,7 @@ servicerequestb="</"$service":"$operation">"
 soapaction="SOAPAction: \""$service":"$operation"\""
 request="  <soapenv:Envelope 
     xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" 
-    xmlns:"$service"=\""$url"\"
+    xmlns:"$service"=\""$url
 request+=$service
 request+="\">
     <soapenv:Header>
