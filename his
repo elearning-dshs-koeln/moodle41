@@ -6,13 +6,15 @@
 # in Notes->HISinOne | hiszugang.txt
 # Nach der Anfrage bei einem Webservice befindet sich dann das Ergebnis
 # zur weiteren Verarbeitung in /dev/shm/response.xml
-# Die Benutzung ist dann wie folgt z.B. für ID's aller Kurse des Sommersemester 2022:
+# Die Benutzung ist dann wie folgt 
+# his Service Operation "variable1:value variable2:value"
+# z.B. für ID's aller Kurse des Sommersemester 2022:
 # his PlanelementService findPlanelementOfEvent "termYear:2022 termTypeValueId:30"
 username="username" # <- noch ändern
 password="password" # <- noch ändern
 service="$1"
 operation="$2"
-input="$3" # Feldname:Value, mehrere mit leerzeichen getrennt
+input="$3" # Variable:Value, mehrere mit leerzeichen getrennt
 url="https://myspoho-test5.dshs-koeln.de/qisserver/services2/" # <- eventuell später noch ändern
 parameter=""
 for in in $input
