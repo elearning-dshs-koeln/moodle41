@@ -12,7 +12,7 @@
 # his PlanelementService findPlanelementOfEvent "termYear:2022 termTypeValueId:30"
 username="username" # <- noch ändern
 password="password" # <- noch ändern
-url="url" # <- noch ändern , Hier ist auch die Beschreibung der API's zu finden
+url="url" # <- noch ändern , Hier ist auch die Beschreibung der API's zu finden, letztes Zeichen: /
 service="$1"
 operation="$2"
 input="$3" # Variable:Value, mehrere mit leerzeichen getrennt
